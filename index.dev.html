@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DTX-PRO MIDI Monitor</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script type="module" src="index.dev.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        th {
+            font-weight: normal;
+            text-align: left;
+            background-color: #222;
+            padding: 15px;
+        }
+        td {
+            padding: 15px;
+            font-family: 'Press Start 2P';
+            color: #8ff;
+            background-color: #008;
+        }
+    </style>
+  </head>
+  <body>
+      <h1>DTX-PRO MIDI Monitor</h1>
+      <table>
+          <tr>
+            <th>Bank</th>
+            <td><tx-display model="bank"></tx-display></td>
+          </tr>
+          <tr>
+            <th>Program</th>
+            <td><tx-display model="program"></tx-display></td>
+          </tr>
+          <tr>
+            <th>Kit</th>
+            <td><tx-display model="kitName"></tx-display></td>
+          </tr>
+          <tr>
+            <th>Description</th>
+            <td><tx-display model="kitDesc"></tx-display></td>
+          </tr>
+          <tr>
+            <th>Note</th>
+            <td><tx-display model="msg0"></tx-display></td>
+          </tr>
+          <tr>
+            <th>Control</th>
+            <td><tx-display model="msg1"></tx-display></td>
+          </tr>
+      </table>
+  </body>
+</html>
